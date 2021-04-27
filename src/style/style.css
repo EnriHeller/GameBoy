@@ -1,6 +1,6 @@
 .gameboy {
   width: 340px;
-  height: 100vh;
+  height: 100%;
   background-color: #cfcad1;
   max-height: 550px;
   padding: 32px 10px;
