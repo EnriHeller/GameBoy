@@ -1,0 +1,283 @@
+.gameboy {
+  width: 340px;
+  height: 100vh;
+  background-color: #cfcad1;
+  max-height: 550px;
+  padding: 32px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 340px) {
+  .gameboy {
+    margin: 16px auto 16px;
+    border-radius: 5% 5% 15% 5%;
+    -webkit-box-shadow: 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 2px 5px 16px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  }
+}
+
+.text-2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 4px;
+  font-size: 16px;
+  margin: 16px 0 0 20px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  color: #0B325E;
+}
+
+.tittle {
+  font-weight: 100;
+  font-size: 20px;
+  font-style: italic;
+  letter-spacing: -1px;
+}
+
+.tm {
+  font-size: 10px;
+}
+
+.screen-container {
+  width: 90%;
+  height: 200px;
+  background-color: #727588;
+  border-radius: 15% 15% 25% 15%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[13];
+      grid-template-columns: repeat(13, 1fr);
+  -ms-grid-rows: (1fr)[13];
+      grid-template-rows: repeat(13, 1fr);
+  border: solid 1px #393862;
+}
+
+.screen {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 10;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 9;
+  grid-area: 2/3/12/12;
+  background-color: #9ca04c;
+  -webkit-box-shadow: inset 2px 2px 15px 0px #000000, -30px -30px 0px -30px rgba(0, 0, 0, 0);
+  box-shadow: inset 2px 2px 15px 0px #000000, -30px -30px 0px -30px rgba(0, 0, 0, 0);
+  margin-top: 0.5rem;
+}
+
+.light-container {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 4/1/8/3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 16%;
+}
+
+.light {
+  width: 8px;
+  height: 8px;
+  margin: 2px 0 4px 6px;
+  border-radius: 100%;
+  background: red;
+  background: radial-gradient(circle, #ff3131 77%, white 100%, white 100%);
+}
+
+.text-1 {
+  font-size: 6px;
+  font-family: sans-serif;
+  color: #b4b5d1;
+  margin-left: 6px;
+}
+
+.text-decoration {
+  -ms-grid-row: 1;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 6;
+  grid-area: 1/6/1/12;
+  margin-top: 8px;
+}
+
+.line1 {
+  background-color: #621e43;
+  height: 1.5px;
+}
+
+.line2 {
+  background-color: #36284b;
+  height: 1.5px;
+  margin-top: 3px;
+}
+
+.decoration1, .decoration2 {
+  margin-top: 9px;
+}
+
+.decoration1 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-column: 2/6;
+}
+
+.decoration2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 11;
+  -ms-grid-column-span: 2;
+  grid-area: 1/11/1/13;
+  margin-left: 10px;
+}
+
+.controls-container {
+  width: 90%;
+  height: 55%;
+  margin-top: 5%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: (1fr)[12];
+      grid-template-rows: repeat(12, 1fr);
+}
+
+.control {
+  background-color: blue;
+}
+
+.directions {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: 3/1/7/5;
+  -webkit-clip-path: polygon(0 35%, 35% 35%, 35% 0, 65% 0, 65% 35%, 100% 35%, 100% 65%, 65% 65%, 65% 100%, 35% 100%, 35% 65%, 0 65%);
+          clip-path: polygon(0 35%, 35% 35%, 35% 0, 65% 0, 65% 35%, 100% 35%, 100% 65%, 65% 65%, 65% 100%, 35% 100%, 35% 65%, 0 65%);
+  background-color: black;
+}
+
+.controls {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 5;
+  grid-area: 4/8/7/13;
+  -webkit-clip-path: ellipse(50% 45% at 50% 50%);
+          clip-path: ellipse(50% 45% at 50% 50%);
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 6px;
+  -webkit-box-shadow: 16px 16px 16px 0px #8f8f8f, inset 4px 4px 15px 0px #818181, 5px 5px 15px 5px rgba(109, 109, 109, 0);
+  box-shadow: 16px 16px 16px 0px #8d8d8d, inset 4px 4px 15px 0px #808080, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.button1 {
+  width: 45px;
+  height: 45px;
+  background-color: #9b2c2c;
+  border-radius: 100%;
+}
+
+.options {
+  -ms-grid-row: 8;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 5;
+  grid-area: 8/4/10/9;
+  border-radius: 100%;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 6px;
+}
+
+.button2 {
+  width: 40px;
+  height: 10px;
+  -webkit-clip-path: ellipse(50% 70% at 50% 50%);
+          clip-path: ellipse(50% 70% at 50% 50%);
+  background-color: grey;
+}
+
+.button2:nth-child(1) {
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.button2:nth-child(2) {
+  margin-top: 10px;
+  margin-left: 4px;
+}
+
+.speaker {
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 4;
+  grid-area: 9/9/12/13;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hole {
+  width: 10px;
+  height: 100%;
+  background-color: grey;
+  -webkit-clip-path: ellipse(80% 50% at 50% 50%);
+          clip-path: ellipse(80% 50% at 50% 50%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #381438;
+}
+/*# sourceMappingURL=style.css.map */

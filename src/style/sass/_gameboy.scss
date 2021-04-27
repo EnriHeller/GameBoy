@@ -1,0 +1,40 @@
+.gameboy{
+    width: 340px;
+    height: 100vh;
+    background-color: #cfcad1;
+    max-height: 550px;
+    padding: 32px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 340px) {
+    .gameboy{
+        margin: 16px auto 16px ;
+        border-radius: 5% 5% 15% 5%;
+        -webkit-box-shadow:  2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0); 
+        box-shadow:  2px 5px 16px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    }
+
+}
+
+.text-2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 4px;
+    font-size: 16px;
+    margin: 16px 0 0 20px;
+    align-self: flex-start;
+    color: #0B325E;
+}
+
+.tittle{
+    font-weight: 100;
+    font-size: 20px;
+    font-style: italic;
+    letter-spacing: -1px;
+}
+
+.tm{
+    font-size: 10px;
+}

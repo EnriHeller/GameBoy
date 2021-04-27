@@ -1,0 +1,80 @@
+.controls-container{
+    width: 90%;
+    height: 55%;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.control{
+    background-color: blue;
+}
+
+.directions{
+    grid-area: 3/1/7/5;
+    clip-path: polygon(0 35%, 35% 35%, 35% 0, 65% 0, 65% 35%, 100% 35%, 100% 65%, 65% 65%, 65% 100%, 35% 100%, 35% 65%, 0 65%);
+    background-color: black;
+}
+
+.controls{
+    grid-area: 4/8/7/13;
+    clip-path: ellipse(50% 45% at 50% 50%);
+    transform: rotate(-20deg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px;
+    -webkit-box-shadow: 16px 16px 16px 0px #8f8f8f, inset 4px 4px 15px 0px #818181, 5px 5px 15px 5px rgba(109, 109, 109, 0); 
+    box-shadow: 16px 16px 16px 0px #8d8d8d, inset 4px 4px 15px 0px #808080, 5px 5px 15px 5px rgba(0,0,0,0);    
+    
+}
+
+.button1{
+    width: 45px;
+    height: 45px;
+    background-color: rgb(155, 44, 44);
+    border-radius: 100%;
+}
+
+.options{
+    grid-area: 8/4/10/9;
+    border-radius: 100%;
+    transform: rotate(-20deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+}
+
+
+.button2{
+    width: 40px;
+    height: 10px;
+    clip-path: ellipse(50% 70% at 50% 50%);
+    background-color: grey;
+}
+
+.button2:nth-child(1){
+    margin-bottom: 16px;
+    margin-right: 4px;
+}
+
+.button2:nth-child(2){
+    margin-top: 10px;
+    margin-left: 4px;
+}
+
+.speaker{
+    grid-area: 9/9/12/13;
+    transform: rotate(-20deg);
+    display: flex;
+    justify-content: space-between;
+}
+
+.hole{
+    width: 10px;
+    height: 100%;
+    background-color: grey;
+    clip-path: ellipse(80% 50% at 50% 50%);
+}
